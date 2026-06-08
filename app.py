@@ -23,7 +23,7 @@ uploaded_file = st.file_uploader("Upload Excel File", type=["xlsx"])
 
 if uploaded_file:
 
-    df = load_data(uploaded_file
+    df = load_data(uploaded_file)
     df["Date"] = pd.to_datetime(df["Date"])
     df = df.sort_values("Date")
 
