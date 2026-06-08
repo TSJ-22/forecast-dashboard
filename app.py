@@ -4,6 +4,7 @@ import numpy as np
 import plotly.graph_objects as go
 from sklearn.preprocessing import LabelEncoder
 from xgboost import XGBRegressor
+
 @st.cache_data
 def load_data(file):
     df = load_data(uploaded_file)
